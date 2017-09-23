@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="vendors/angularjs.js"></script>
     <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <title>Life Gallery</title>
 </head>
-<body>
+<body ng-app="myApp">
     <head>
         <h1>faceblogdotbomb</h1>
     </head>
+    <section ng-controller="GalleryController as gc">
+        <img class="gallery-cover" src="pictures/seriousfriends.jpg" alt="20 somethings looking really cool">
+    </section>
 </body>
 </html>
