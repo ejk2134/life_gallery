@@ -1,3 +1,19 @@
 .gallery-cover{
     height: 200px;
 }
+
+.glyph-large{
+    font-size: 35px;
+}
+
+.glyphicon-heart:hover{
+    color: red;
+}
+
+.glyphicon-thumbs-up:hover{
+    color: blue;
+}
+
+.caption{
+    width: 300px;
+}

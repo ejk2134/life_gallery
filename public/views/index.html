@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="vendors/angularjs.js"></script>
     <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-theme.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
     <title>Life Gallery</title>
 </head>
 <body ng-app="myApp">
@@ -14,7 +17,131 @@
         <h1>faceblogdotbomb</h1>
     </head>
     <section ng-controller="GalleryController as gc">
-        <img class="gallery-cover" src="pictures/seriousfriends.jpg" alt="20 somethings looking really cool">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            <img class="gallery-cover" src="pictures/seriousfriends.jpg" alt="20 somethings looking really cool"
+                            ng-click="friendsOn=true">
+                            
+                            <div ng-show="friendsOn" class="caption">
+                                <p>
+                                    This is one of the highlights of a photo shoot I had
+                                    with some of my best friends in the world. We're an odd bunch. We never
+                                    manage to take a photo where at least one of us isn't making a goofy face,
+                                    so naturally I chose one where my face is mostly normal.
+                                </p>
+                                <p>
+                                    These people
+                                    are beautiful. We've spent so much time together that we share all sorts
+                                    of bizarre rituals. Find us on Thanksgiving making your family recipes look lame.
+                                </p>
+                                <button ng-click="friendsOn=false">hide</button>
+                            </div>
+                            <div>
+                                <span class="glyphicon glyphicon-heart glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div>
+                            <img class="gallery-cover" src="pictures/ferguson.jpg" alt="protester" ng-click="protesterOn=true">
+                            <div ng-show="protesterOn" class="caption">
+                                <p>
+                                    This is a photo of a protester in Ferguson during the aftermath of the police
+                                    killing of Michael Brown. I believe this form of nonviolent protest is vital for change,
+                                    and I use this picture as a reminder of the work that needs to be done in the world
+                                    and the capacity for lots of people to combine their voices when they're fired up. I also
+                                    <i>really</i> like that this guy is holding a bag of chips.
+                                </p>
+                                <button ng-click="protesterOn=false">hide</button>
+                            </div>                                
+                            <div>
+                                <span class="glyphicon glyphicon-heart glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img class="gallery-cover" src="pictures/marathonfinisher.jpg" alt="runner posing with a medal"
+                                ng-click="runnerOn=true">
+                            <div ng-show="runnerOn" class="caption">
+                                <p>
+                                    This is a picture of me in 2013 after running the Twin Cities Marathon. Running is amazing.
+                                    It does so much for my body and mind. You should try it.
+                                </p>
+                                <button ng-click="runnerOn=false">hide</button>
+                            </div>
+                            <div>
+                                <span class="glyphicon glyphicon-heart glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img class="gallery-cover" src="pictures/emerson.jpg" alt="emerson the cat"
+                                ng-click="emersonOn=true">
+                            <div ng-show="emersonOn" class="caption">
+                                <p>
+                                    This is Emerson. He likes to splay out on the ground, play with plastic bags, 
+                                    knock over glasses of water when he's thirsty, and make really serious faces.
+                                </p>
+                                <button ng-click="emersonOn=false">hide</button>
+                            </div>
+                            <div>
+                                <span class="glyphicon glyphicon-heart glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img class="gallery-cover" src="pictures/wolf_of_wall_street.jpg" alt="leo living large"
+                                ng-click="wallstreetOn=true">
+                            <div ng-show="wallstreetOn" class="caption">
+                                <p>
+                                    This is a picture from the 2013 movie <i>The Wolf of Wall Street</i>. This is one of
+                                    my favorite movies. It is a rollercoaster of emotion: absolutely hilarious through and
+                                    through, while stirring anger about one of the most pernicious forms of greed in the world.
+                                    The main character, Jordan Belfort, played by Leonardo DiCaprio, has an impressive sort of 
+                                    charm that makes part of you want to root for him through much of the movie, even as 
+                                    you cheer on the FBI agent stalking him.
+                                </p>
+                                <button ng-click="wallstreetOn=false">hide</button>
+                            </div>
+                            <div>
+                                <span class="glyphicon glyphicon-heart glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img class="gallery-cover" src="pictures/beer.jpg" alt="beer art"
+                                ng-click="beerOn=true">
+                            <div ng-show="beerOn" class="caption">
+                                <p>
+                                    I love me some beer, and sometimes when I'm drinking it and I see a cool 
+                                    pattern form in the foam on top, I'll take a picture of it. This one looks like 
+                                    some type of beetle or something.
+                                </p>
+                                <button ng-click="beerOn=false">hide</button>
+                            </div>
+                            <div>
+                                <span class="glyphicon glyphicon-heart glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 </body>
 </html>
