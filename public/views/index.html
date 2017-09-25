@@ -40,8 +40,11 @@
                                 <button ng-click="friendsOn=false">hide</button>
                             </div>
                             <div>
-                                <span class="glyphicon glyphicon-heart glyph-large"></span>
-                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large" ng-click="gc.friendsLike()"></span>
+                                <span class="glyphicon glyphicon-heart glyph-large" ng-click="gc.friendsLove()"></span>
+                            </div>
+                            <div>
+                                {{gc.friendsDisplay}}
                             </div>
                         </div>
                     </td>
@@ -59,8 +62,11 @@
                                 <button ng-click="protesterOn=false">hide</button>
                             </div>                                
                             <div>
-                                <span class="glyphicon glyphicon-heart glyph-large"></span>
-                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large" ng-click="gc.protesterLike()"></span>
+                                <span class="glyphicon glyphicon-heart glyph-large" ng-click="gc.protesterLove()"></span>
+                            </div>
+                            <div>
+                                {{gc.protesterDisplay}}
                             </div>
                         </div>
                     </td>
@@ -76,8 +82,11 @@
                                 <button ng-click="runnerOn=false">hide</button>
                             </div>
                             <div>
-                                <span class="glyphicon glyphicon-heart glyph-large"></span>
-                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large" ng-click="gc.runnerLike()"></span>
+                                <span class="glyphicon glyphicon-heart glyph-large" ng-click="gc.runnerLove()"></span>
+                            </div>
+                            <div>
+                                {{gc.runnerDisplay}}
                             </div>
                         </div>
                     </td>
@@ -95,8 +104,11 @@
                                 <button ng-click="emersonOn=false">hide</button>
                             </div>
                             <div>
-                                <span class="glyphicon glyphicon-heart glyph-large"></span>
-                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large" ng-click="gc.emersonLike()"></span>
+                                <span class="glyphicon glyphicon-heart glyph-large" ng-click="gc.emersonLove()"></span>
+                            </div>
+                            <div>
+                                {{gc.emersonDisplay}}
                             </div>
                         </div>
                     </td>
@@ -116,8 +128,11 @@
                                 <button ng-click="wallstreetOn=false">hide</button>
                             </div>
                             <div>
-                                <span class="glyphicon glyphicon-heart glyph-large"></span>
-                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large" ng-click="gc.wallstreetLike()"></span>
+                                <span class="glyphicon glyphicon-heart glyph-large" ng-click="gc.wallstreetLove()"></span>                                
+                            </div>
+                            <div>
+                                {{gc.wallstreetDisplay}}
                             </div>
                         </div>
                     </td>
@@ -134,8 +149,11 @@
                                 <button ng-click="beerOn=false">hide</button>
                             </div>
                             <div>
-                                <span class="glyphicon glyphicon-heart glyph-large"></span>
-                                <span class="glyphicon glyphicon-thumbs-up glyph-large"></span>
+                                <span class="glyphicon glyphicon-thumbs-up glyph-large" ng-click="gc.beerLike()"></span>
+                                <span class="glyphicon glyphicon-heart glyph-large" ng-click="gc.beerLove()"></span>                                
+                            </div>
+                            <div>
+                                {{gc.beerDisplay}}
                             </div>
                         </div>
                     </td>
